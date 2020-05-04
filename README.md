@@ -21,7 +21,7 @@ See also:
 A protocol for our lazy-sequence abstraction, and a re-implementation using
 `delay` so that function calls are cached.
 
-Also some examples of laziness + [chunked sequences][chunked-seq], and
+Also some examples of laziness + [side-effects][effect-seq] (guest starring [chunked sequences][chunked-seq]), and
 laziness + [expensive calculations][expensive-seq].
 
 ### lazy-demo.seq
@@ -34,5 +34,6 @@ sequence functions instead of our own homegrown versions.
 [core-map]: https://github.com/clojure/clojure/blob/clojure-1.10.1/src/clj/clojure/core.clj#L2755
 [core-filter]: https://github.com/clojure/clojure/blob/clojure-1.10.1/src/clj/clojure/core.clj#L2820-L2823
 [core-take]: https://github.com/clojure/clojure/blob/clojure-1.10.1/src/clj/clojure/core.clj#L2882-L2886
-[chunked-seq]: src/lazy_demo/protocol.clj
-[expensive-seq]: src/lazy_demo/protocol.clj
+[effect-seq]: src/lazy_demo/protocol.clj#L146
+[chunked-seq]: src/lazy_demo/protocol.clj#L175
+[expensive-seq]: src/lazy_demo/protocol.clj#L211
